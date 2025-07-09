@@ -1,9 +1,17 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'); 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+body {
+  font-family:"Montserrat", sans-serif ;
 }
 
 .imagen_de_fondo {
@@ -30,21 +38,34 @@
 }
 
 .izq2 {
-  padding: 5px 0 5px 20px;
+  padding: 20px 0 0 110px;
   display: flex;
   flex-direction: row;
   gap: 10px;
+  font-size:x-small;
 }
 
 .der2 {
-  padding: 5px 20px 5px 0;
+  padding: 20px 160px 0 0;
   display: flex;
-  gap: 10px;
-  height: 30px;
+  gap: 30px;
+  height: 40px;
 }
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  padding: 0 100px 0 0;
+  justify-content: end;
+  margin-top: 90px;
+}
+
 header nav ul {
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 ul {
@@ -52,3 +73,26 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.seccion1 .izq .izq2 a {
+  font-weight: normal;
+}
+
+.seccion2 .text-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
